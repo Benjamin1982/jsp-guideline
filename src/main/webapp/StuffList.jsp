@@ -4,16 +4,23 @@
 <html>
 <head>
   <title>Listenansicht</title>
+  <!-- Walkaround CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-   <div>
-   	Liste tabellarisch (hupiouoiuo)
-   </div>
-  <table>
+
+   <center>
+   	Liste tabellarisch (Alle Stock-Artikel in Auflistung)
+   </center>
+  <div class="mdl-cell mdl-cell--4-col"> 
+  <div> 
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
   	<thead>
   		<tr>
-  		<!--ER: kleine runde Tische -->
+  		
   			<th>NO</th>
   			<th>Name</th>
   			<th>Description</th>
@@ -43,5 +50,8 @@
   	</tbody>
   	
   </table>
+  </div>
+  </div>
+
  </body>
  </html>
