@@ -60,6 +60,9 @@ public class PracticalServlet extends HttpServlet
 				case "/delete":
 					break;
 				case "/edit":
+					LOGGER.log(Level.INFO, "************************************");
+					LOGGER.log(Level.INFO, "  loading Edit View");
+					LOGGER.log(Level.INFO, "************************************");
 					break;
 				case "/update":
 					break;

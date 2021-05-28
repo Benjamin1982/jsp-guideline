@@ -12,9 +12,13 @@
 
 <body>
 
-   <center>
+  <center>
    	Liste tabellarisch (Alle Stock-Artikel in Auflistung)
-   </center>
+  </center>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <main class="mdl-layout__content">
+  <div class="page-content">
+  <div class="mdl-grid center-items">
   <div class="mdl-cell mdl-cell--4-col"> 
   <div> 
   <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
@@ -41,9 +45,9 @@
   			<td><c:out value="${stuff.location}" 	/></td>
   			<td>
   		    <a 
-  			href="/PSMS/edit?id=1">Edit</a>
+  			href="/PSMS-1/edit?id=1">Edit</a>
   				 
-  		    <a href="/PSMS/delete?id=1">Delete</a>
+  		    <a href="/PSMS-1/delete?id=1">Delete</a>
   			</td>
   	</tr>
   	</c:forEach>
@@ -52,6 +56,9 @@
   </table>
   </div>
   </div>
-
+  </div>
+  </div>
+  </main>
+  </div>
  </body>
  </html>
