@@ -27,12 +27,17 @@
   	<c:forEach var="stuff" items="${alle_waren}">
   	<c:set var="count" value="${count +1}" scope="page" /><!--diese Variable zählt jede Zeile aufwärts-->
   	<tr>
-  			<th> <c:out value="${count}" /></th>
-  			<td><c:out value="${stuff.name}" /></td>
-  			<td>Any Description</td>
-  			<td>Any Quantity</td>
-  			<td>Any Location</td>
-  			<td style="color:red; font-weight:bolder">  Actions are edit delete </td>
+  			<th> <c:out value="${count}" 			/></th>
+  			<td><c:out value="${stuff.name}" 		/></td>
+  			<td><c:out value="${stuff.description}" /></td>
+  			<td><c:out value="${stuff.quantity}" 	/></td>
+  			<td><c:out value="${stuff.location}" 	/></td>
+  			<td>
+  		    <a 
+  			href="/PSMS/edit?id=1">BEARBEITEN</a>
+  				 
+  		    <a href="/PSMS/delete?id=1">ENTFERNEN</a>
+  			</td>
   	</tr>
   	</c:forEach>
   	</tbody>
