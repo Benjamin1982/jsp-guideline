@@ -4,10 +4,15 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
   http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-	<!-- <servlet> <servlet-name>sonoojaiswal</servlet-name> <servlet-class>DemoServlet</servlet-class> 
-		</servlet> <servlet-mapping> <servlet-name>sonoojaiswal</servlet-name> <url-pattern>/welcome</url-pattern> 
-		</servlet-mapping> -->
+	<servlet> 
+		<servlet-name>sonoojaiswal</servlet-name> 
+		<servlet-class>com.mitrais.psms.servlets.PracticalServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>sonoojaiswal</servlet-name> 
+		<url-pattern>/</url-pattern> 
+	</servlet-mapping>
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>echo.jsp</welcome-file>
 	</welcome-file-list>
 </web-app> 
