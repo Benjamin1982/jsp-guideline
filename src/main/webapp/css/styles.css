@@ -3,7 +3,19 @@ body
 {
 	background-color:cornflowerblue;
 }
+.bottom 
+{
+  width: 880px;
+  height: 70px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+}
 
+.bottom div 
+{
+   flex: 1;
+}
 .box-center
 {
 	align-items: 		center;

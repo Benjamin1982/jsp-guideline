@@ -8,13 +8,27 @@
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
+
 	<div class="box-center">
 		Current Time: <%= java.util.Calendar.getInstance().getTime() %>
 	</div>
 	<div class="box-center">
-	<h1 align="center">
-		Another One bytes the Dust 
-	</h1>
+	<h2 align="center" style="color:orange">
+		Test Ausgabe
+	</h2>
 	</div>
+	
+	<div class="footer">
+	<div class="bottom">
+  			<div style="background-color:red;">Dont't mess with the U.S. Or they mess with you (quote by Micky Mouse)</div>
+  			<div style="background-color:white;">Dont't mess with the U.S. Or they mess with you (quote by Micky Mouse)</div>  
+  			<div style="background-color:blue;">Dont't mess with the U.S. Or they mess with you (quote by Micky Mouse)</div>
+	</div>
+	</div>
+     <hr>
+	<p><b>Dev-Hinweis:</b> Internet Explorer 10 unterstuetzt align-items property nicht.</p>
+	
+
 </body>
 </html>
