@@ -31,11 +31,13 @@ public class StuffDataContainer
 		allthings.add(item3);
 	}
 	
-	public List<Stuff> getAllthings() {
+	public List<Stuff> getAllthings() 
+	{
 		return allthings;
 	}
 
-	public void setAllthings(List<Stuff> allthings) {
+	public void setAllthings(List<Stuff> allthings) 
+	{
 		this.allthings = allthings;
 	}
 

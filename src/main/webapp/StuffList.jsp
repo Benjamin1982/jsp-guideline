@@ -41,9 +41,9 @@
   			<td><c:out value="${stuff.location}" 	/></td>
   			<td>
   		    <a 
-  			href="/PSMS/edit?id=1">BEARBEITEN</a>
+  			href="/PSMS/edit?id=1">Edit</a>
   				 
-  		    <a href="/PSMS/delete?id=1">ENTFERNEN</a>
+  		    <a href="/PSMS/delete?id=1">Delete</a>
   			</td>
   	</tr>
   	</c:forEach>
