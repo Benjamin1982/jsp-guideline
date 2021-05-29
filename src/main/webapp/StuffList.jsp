@@ -14,7 +14,9 @@
 
   <center>
    	Liste tabellarisch (Alle Stock-Artikel in Auflistung)
+   	<a class="mdl-navigation__link" href="/PSMS-1/new">Add New Item</a>
   </center>
+  <br></br><br></br> 
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <main class="mdl-layout__content">
   <div class="page-content">

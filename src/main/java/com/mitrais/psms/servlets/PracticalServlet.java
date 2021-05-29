@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -54,6 +55,10 @@ public class PracticalServlet extends HttpServlet
 				switch(action)
 				{
 				case "/new":
+					LOGGER.log(Level.INFO, "************************************");
+					LOGGER.log(Level.INFO, "  loading Add Stuff View");
+					LOGGER.log(Level.INFO, "************************************");
+					showEditForm(req,res);
 					break;
 				case "/insert":
 					break;
@@ -63,6 +68,7 @@ public class PracticalServlet extends HttpServlet
 					LOGGER.log(Level.INFO, "************************************");
 					LOGGER.log(Level.INFO, "  loading Edit View");
 					LOGGER.log(Level.INFO, "************************************");
+					showEditForm(req,res);
 					break;
 				case "/update":
 					break;
@@ -79,6 +85,19 @@ public class PracticalServlet extends HttpServlet
 				LOGGER.log(Level.FINEST, "SQL FEHLER MAYBE",uhr);
 			}
 			}
+
+
+	private void showEditForm(HttpServletRequest req, HttpServletResponse res) throws
+	Exception
+	{
+		String id = req.getParameter("id");// Achtung: String!
+		Optional<Stuff> itemfound = stuffDao.find(id); 
+		RequestDispatcher rd = req.getRequestDispatcher("StuffForm.jsp");
+		itemfound.ifPresent(s->req.setAttribute("stuff",s
+				));
+		
+		rd.forward(req, res); // Form also forward 
+	}
 
 
 	private void listStuff(HttpServletRequest req, HttpServletResponse res) throws

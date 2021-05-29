@@ -60,11 +60,16 @@ public class StuffDataContainer
 			//Output data in console:
 			while( rs.next())
 			{
-				String str = rs.getString(2);
-				System.out.println("WOAH NELLY: "+str);
+				int fact = rs.getInt(1);
+				String strProd = rs.getString(2);
+				String strDescr = rs.getString(3);
+				String strQnty = rs.getString(4);
+				String strLoc = rs.getString(5);
+				System.out.println("Get Prod-Name: "+strProd);
 				
 				
-				Stuff current = new Stuff(1,"a","v","c","f");
+				Stuff current = new Stuff(strProd,strDescr,strQnty,strLoc);
+				current.setId(fact);
 				allthings.add(current);
 			}
 			
